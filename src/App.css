@@ -1,0 +1,58 @@
+/* Estilos Generales */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Encabezado y Menú */
+.header {
+  background-color: #343a40;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.menu {
+  background-color: #495057;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Contenedor Principal */
+.main-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Tarjeta de Trivia */
+.trivia-card {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Botones */
+.btn {
+  margin-right: 10px;
+}
+
+/* Resultado Final */
+.result-section {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  border-radius: 8px;
+}
+
+/* Estilo para botones en estado "clicked" */
+.respuesta-btn.clicked {
+  background-color: #007bff;
+  color: #fff;
+}

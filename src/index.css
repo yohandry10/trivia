@@ -1,0 +1,140 @@
+/* Estilos generales del cuerpo del documento */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f0f0f0;
+    background: linear-gradient(45deg, #f0eded, #00050b);
+    background-size: 400% 400%;
+    animation: gradientBackground 10s ease infinite, changeTriviaBackground 10s linear infinite;
+    transition: background-color 0.3s ease;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos generales para tarjetas */
+  .card {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Estilos para preguntas */
+  #pregunta {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+    animation: fadeInQuestion 1s ease;
+  }
+  
+  /* Estilos para botones de respuesta */
+  .respuesta-btn {
+    font-size: 1.2em;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .respuesta-btn.clicked {
+    transform: scale(1.1);
+  }
+  
+  .respuesta-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .respuesta-btn.correcta {
+    background-color: #006400; /* Verde oscuro para respuestas correctas */
+  }
+  
+  .respuesta-btn.incorrecta {
+    background-color: #8B0000; /* Rojo oscuro para respuestas incorrectas */
+  }
+  
+  /* Resultado final y puntuación */
+  .resultado-final {
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  /* Estilos para botones de práctica y desafío */
+  .respuesta-btn.hovered {
+    transform: scale(1.1);
+    box-shadow: 0 0 12px rgba(108, 117, 125, 0.6);
+  }
+  
+  .respuesta-btn:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Transiciones suaves para elementos específicos */
+  #pregunta,
+  .respuesta-btn {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  /* Estilos para el modal */
+  #modal {
+    border-radius: 10px;
+  }
+  
+  /* Animación de pulsación para íconos */
+  .mi-elemento:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Estilos para íconos */
+  .mi-icono {
+    font-size: 30px;
+    color: #ff0000;
+    animation: pulse 1s infinite;
+  }
+  
+  .mi-icono:hover {
+    animation: none;
+  }
+  
+  /* Tema oscuro */
+  body.tema-oscuro {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Nueva animación para el cambio de color de fondo de la trivia */
+  @keyframes changeTriviaBackground {
+    0% {
+      background-color: #006899; /* Primer color de fondo */
+    }
+    50% {
+      background-color: #d2d7dd; /* Segundo color de fondo */
+    }
+    100% {
+      background-color: #ffa96b; /* Vuelve al primer color de fondo */
+    }
+  }
+  
+  /* Animación de fondo gradiente */
+  @keyframes gradientBackground {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
