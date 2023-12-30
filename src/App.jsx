@@ -167,18 +167,9 @@ const App = () => {
       puntos: 10,
       pista: 'React se centra en componentes y su estado, pero no directamente en "vistas"',
     },
-    {
-      pregunta: '¿Qué es un "hook" en React?',
-      respuestas: [
-        'Un trozo de código que "engancha" o se conecta a una base de datos',
-        'Un componente funcional en React',
-        'Una función que permite a los componentes funcionales tener estado y otras características de componentes de clase',
-        'Una herramienta de depuración en el navegador',
-      ],
-      correcta: 2,
-      puntos: 15,
-      pista: 'Introducido en React 16.8, permite usar estado y otras características en componentes funcionales',
-    },
+  
+
+      
     {
       pregunta: '¿Cuál es el propósito de Redux en una aplicación React?',
       respuestas: [
