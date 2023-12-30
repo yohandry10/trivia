@@ -1,13 +1,12 @@
 // Header.jsx
 import React from 'react';
-import './Header.css';  // Importa el archivo de estilo
+import './Header.css';
 
 const Header = () => {
   return (
-    <header className="app-header"> {/* Agrega una clase para los estilos */}
-      <h1>¡Trivia de Curso BootcampG16!</h1>
-      {/* Otros elementos del header si es necesario */}
-    </header>
+    <div className="app-header">
+      <h1>¡Bienvenido a mi aplicación!</h1>
+    </div>
   );
 };
 
