@@ -1,17 +1,13 @@
-
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Outlet } from 'react-router-dom';
-import PublicPage from './components/pages/PublicPage.jsx';
-import LoginPage from './components/pages/LoginPage.jsx';
-import RegisterPage from './components/pages/RegisterPage.jsx';
-import Header from './components/Header/Header.jsx';
-import Menu from './components/Menu/Menu.jsx';
-
-import "./App.css"; // Importa el archivo de estilos
+import PublicPage from './components/pages/PublicPage';
+import LoginPage from './components/pages/LoginPage';
+import RegisterPage from './components/pages/RegisterPage';
+import Header from './components/Header/Header';
+import Menu from './components/Menu/Menu';
 
 const App = () => {
   const trivia = [
-    
     {
       pregunta: '¿Cuál es el lenguaje de programación más utilizado para el desarrollo web?',
       respuestas: ['Java', 'Python', 'JavaScript', 'C#'],
@@ -32,7 +28,7 @@ const App = () => {
         'Manejar bases de datos',
         'Crear interfaces de usuario interactivas',
         'Conectar servidores y clientes',
-        'Optimizar consultas SQL',{}
+        'Optimizar consultas SQL',
       ],
       correcta: 1,
       puntos: 12,
@@ -214,12 +210,7 @@ const App = () => {
 
 
 
-
-
-
-
-
-    // ... (Preguntas eliminadas por brevedad)
+    // ... (preguntas existentes)
   ];
 
   const [rondaActual, setRondaActual] = useState(0);
@@ -428,5 +419,3 @@ const App = () => {
 };
 
 export default App;
-
-
